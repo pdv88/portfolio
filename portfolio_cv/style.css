@@ -153,6 +153,12 @@ section {
 #hero .container {
   max-width: 600px;
   flex-basis: 50%;
+  text-align: left;
+}
+
+#hero span{
+  font-weight: bold;
+  font-size: 60px;
 }
 
 /*--------------------Seccion About------------------------*/
