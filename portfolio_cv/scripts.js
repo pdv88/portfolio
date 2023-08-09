@@ -1,8 +1,10 @@
-// Funcion para añadir o quitar la clase slideIn a secciones
+// Funcion para añadir o quitar la clase slide-in a secciones
 function handleSectionIntersect(entries, observer) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('slide-in');
+      setTimeout(function(){
+        entry.target.classList.add('slide-in');
+      }, 1000);
     } else {
       entry.target.classList.remove('slide-in');
     }
