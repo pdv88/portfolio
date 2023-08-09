@@ -4,7 +4,7 @@ function handleSectionIntersect(entries, observer) {
     if (entry.isIntersecting) {
       setTimeout(function(){
         entry.target.classList.add('slide-in');
-      }, 1000);
+      }, 500);
     } else {
       entry.target.classList.remove('slide-in');
     }
@@ -15,7 +15,7 @@ function handleSectionIntersect(entries, observer) {
 const sectionObserverOptions = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.2, // The amount of section visible needed to trigger the animation
+  threshold: 0.3, // The amount of section visible needed to trigger the animation
 };
 
 // Variable de interseccion de seccion
