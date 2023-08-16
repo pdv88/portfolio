@@ -13,7 +13,7 @@ function handleSectionIntersect(entries, observer) {
 const sectionObserverOptions = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.3, // The amount of section visible needed to trigger the animation
+  threshold: 0.4, // The amount of section visible needed to trigger the animation
 };
 
 // Variable de interseccion de seccion
