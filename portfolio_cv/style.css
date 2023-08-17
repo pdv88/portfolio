@@ -4,6 +4,8 @@ html {
   scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: 'Prompt', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -144,11 +146,6 @@ section {
   background-position: right;
 }
 
-#hero img {
-  border-radius: 1rem;
-  width: 400px;
-}
-
 #hero .container {
   max-width: 1200px;
   flex-basis: 100%;
@@ -231,12 +228,14 @@ section.slide-in {
 #contact .icon-container {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   width: 100%;
 }
 
 #contact p{
   display: flex;
   flex-direction: column;
+  padding: 1rem 2rem;
 }
 
 #contact img{
