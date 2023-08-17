@@ -1,16 +1,14 @@
 /*--------------------CSS General------------------------*/
-
-html {
-  scroll-behavior: smooth;
+*{
   box-sizing: border-box;
-  font-family: 'Prompt', sans-serif;
   margin: 0;
   padding: 0;
 }
+html {
+  font-family: 'Prompt', sans-serif;
+}
 
 body {
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
   color: aliceblue;
@@ -42,14 +40,14 @@ header {
   color: #494949;
   padding: 0 3rem;
   height: 80px;
-  max-width: 1200px;
+  max-width: 1500px;
   border-radius: 1rem;
   display: flex;
-  width: calc(100vw - 10rem);
+  width: calc(100% - 3rem);
   align-content: center;
   justify-content: space-between;
   position: fixed;
-  top: 10px;
+  top: 1rem;
   z-index: 1;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
@@ -115,20 +113,19 @@ nav a{
 
 
 .container {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 20px;
   width: 100%;
 }
 
 section {
-  height: 100vh;
+  padding: 5rem 0;
   text-align: center;
   opacity: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 1s;
 }
 
 /*--------------------Seccion Hero------------------------*/
@@ -137,18 +134,18 @@ section {
   text-align: center;
   display: flex;
   align-items: left;
-  max-width: 1200px;
+  max-width: 1500px;
   width: 100%;
   margin: auto;
   padding-top: 90px;
   height: 100vh;
   background-image: url("./Assets/img/Foto CV - TransparentGradient.png");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right, bottom;
 }
 
 #hero .container {
-  max-width: 1200px;
+  max-width: 1500px;
   flex-basis: 100%;
   text-align: left;
 }
@@ -156,7 +153,6 @@ section {
 #hero span{
   font-weight: bold;
   font-size: 60px;
-  line-height: 1rem;
   background: linear-gradient(10deg, #cb770a, #2133be);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -164,8 +160,7 @@ section {
 
 #hero h3{
   text-align: left;
-  line-height: .5rem;
-  padding-left: 20rem;
+  padding-left: 15rem;
 }
 
 /*--------------------Seccion About------------------------*/
@@ -181,9 +176,9 @@ section {
 #experience .skills-container{
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 3rem;
   width: 100%;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 #experience p{
@@ -196,7 +191,6 @@ section {
 
 #experience img{
   width: 60px;
-  fill: aliceblue;
 }
 
 /*--------------------Seccion Projectos------------------------*/
@@ -216,11 +210,17 @@ section {
 
 .project {
   margin-bottom: 20px;
-  padding: 3rem;
-  background-color: #f0f0f04d;
+  padding: 2rem;
+  background-color: #2c2c2c4d;
   border-radius: .5rem;
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.323);
+  width: 350px;
+}
+
+.project p{
+  text-align: left;
+  padding: 1rem 0;
 }
 
 .project h3 {
@@ -230,13 +230,23 @@ section {
 .project a {
   margin-right: 10px;
   text-decoration: none;
-  color: #333;
+  color: aliceblue;
   background-color: #f0f0f07d;
-  padding: 5px 10px;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
 }
 
 .project a:hover {
-  background-color: #ddd;
+  background: linear-gradient(to right, #cb770a 20%, #2133be 40%, #2133be 60%, #cb770a 80%);
+  background-size: 200% auto;
+  animation: titles 3s linear infinite;
+}
+
+.project img{
+  width: 100%;
+  object-fit: scale-down;
+  border-radius: .5rem;
+  background-color: rgba(240, 248, 255, 0.262);
 }
 
 section.slide-in {
@@ -253,7 +263,7 @@ section.slide-in {
 
 #contact .icon-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -262,10 +272,11 @@ section.slide-in {
   display: flex;
   flex-direction: column;
   padding: 1rem 2rem;
+  gap: 1rem;
 }
 
 #contact img{
-  width: 100px;
+  width: 60px;
   fill: aliceblue;
 }
 
