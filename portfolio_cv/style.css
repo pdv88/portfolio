@@ -310,6 +310,30 @@ section.slide-in {
   }
 }
 
+.sphere1{
+  position: fixed;
+  top: -15rem;
+  left: -25rem;
+  background-image: linear-gradient(216deg, #bb7728, #3c699a);
+  border-radius: 50%;
+  height: 30rem;
+  width: 60rem;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+.sphere2{
+  position: fixed;
+  bottom: -25rem;
+  right: -25rem;
+  background-image: linear-gradient(216deg, #bb7728, #3c699a);
+  border-radius: 50%;
+  height: 40rem;
+  width: 70rem;
+  z-index: -1;
+  filter: blur(5px);
+}
+
 /*--------------------Responsive------------------------*/
 
 /* @media screen and max-width(570px) { 
