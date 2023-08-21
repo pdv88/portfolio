@@ -295,7 +295,7 @@ section.slide-in {
 @keyframes slideIn {
   0% {
     opacity: 0;
-    transform: translateX(300px);
+    transform: translateX(200px);
   }
   100% {
     opacity: 1;
@@ -359,12 +359,21 @@ section.slide-in {
 
   /*hero*/
   #hero{
-    background-position: bottom;
+    background-position: bottom right;
+    background-size:contain;
     align-items: flex-start;
   }
 
   #hero .container{
     padding-top: 5rem;
+  }
+
+  #hero span{
+    font-size: 30px;
+  }
+
+  #hero h3{
+    font-size: 16px;
   }
 
 }
