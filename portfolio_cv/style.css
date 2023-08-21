@@ -309,10 +309,12 @@ section.slide-in {
   .sphere1{
     top: -30rem;
     left: -25rem;
+    filter: blur(100px);
   }
   .sphere2{
     bottom: -40rem;
     right: -25rem;
+    filter: blur(100px);
   }
 
   /*header*/
