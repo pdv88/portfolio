@@ -6,21 +6,17 @@
   font-family: 'Prompt', sans-serif;
   scroll-behavior: smooth;
 }
-
 body {
   display: flex;
   justify-content: center;
   color: aliceblue;
   background-color: rgb(22, 21, 23);
 }
-
 main {
   overflow-x: hidden;
   height: 100vh;
-  height: 100dvh;
   width: 100%;
 }
-
 h1{
   font-weight: bold;
   font-size: 60px;
@@ -30,12 +26,9 @@ h1{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 ::-webkit-scrollbar{
   z-index: 0;
 }
-
-
 
 /*--------------------Header------------------------*/
 
@@ -50,32 +43,26 @@ header {
   position: fixed;
   backdrop-filter: blur(10px);
 }
-
 header a {
   display: flex;
 }
-
 header .img-container {
   display: flex;
   justify-content: flex-start;
 }
-
 header img {
   width: 50px;
   object-fit: scale-down;
 }
-
 .burger{
   display: none;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   justify-content: flex-end;
 }
-
 nav ul {
   list-style: none;
   display: flex;
@@ -83,7 +70,6 @@ nav ul {
   height: 100%;
   margin: 0;
 }
-
 nav ul li {
   margin-left: 20px;
   margin: auto;
@@ -93,7 +79,6 @@ nav ul li {
   border-radius: 0.5rem;
   transition: all 500ms;
 }
-
 nav li:hover {
   color: aliceblue;
   background: linear-gradient(216deg, #ed8925, #3c699a);
@@ -104,24 +89,19 @@ nav li:hover {
   transform: translateY(-3px);
   transition: all 500ms;
 }
-
 nav a{
   text-decoration: none;
   color: aliceblue;
   font-weight: bold;
 }
 
-
-
 /*--------------------Secciones general------------------------*/
-
 
 .container {
   max-width: 1500px;
   padding: 2rem;
   width: 100%;
 }
-
 section {
   text-align: center;
   opacity: 0;
@@ -148,16 +128,13 @@ section {
   background-position: right;
   margin: auto;
 }
-
 #hero .container {
   max-width: 600px;
   text-align: left;
 }
-
 #hero .container :last-child{
   text-align: right;
 }
-
 #hero span{
   font-weight: bold;
   font-size: 50px;
@@ -176,8 +153,6 @@ section {
 
 /*--------------------Seccion Experience------------------------*/
 
-
-
 #experience .skills-container{
   display: flex;
   flex-wrap: wrap;
@@ -185,7 +160,6 @@ section {
   width: 100%;
   justify-content: center;
 }
-
 #experience p{
   display: flex;
   flex-direction: column;
@@ -193,7 +167,6 @@ section {
   align-items: center;
   gap: 1rem;
 }
-
 #experience img{
   width: 40px;
 }
@@ -205,21 +178,18 @@ section {
   display: flex;
   flex-direction: column;
 }
-
 #projects img{
   width: 350px;
   height: 115px;
   object-fit: scale-down;
   padding: 1rem 2rem;
 }
-
 #projects .container {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
 }
-
 .project {
   background-color: #2c2c2c4d;
   border-radius: .5rem;
@@ -227,20 +197,16 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.323);
   width: 350px;
 }
-
 .project .datos{
   padding: 2rem;
 }
-
 .project p{
   text-align: left;
   padding: 1rem 0;
 }
-
 .project h3 {
   margin: 0;
 }
-
 .project a {
   margin-right: 10px;
   text-decoration: none;
@@ -250,15 +216,11 @@ section {
   border-radius: .5rem;
   width: 100%
 }
-
 .project a:hover {
   background: linear-gradient(216deg, #ed8925, #3c699a);
   background-size: 400% 400%;
   animation: titles 3s ease infinite;
 }
-
-
-
 section.slide-in {
   animation: slideIn 0.5s ease-in-out;
   opacity: 1;
@@ -270,21 +232,18 @@ section.slide-in {
   display: flex;
   flex-direction: column;
 }
-
 #contact .icon-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
 }
-
 #contact p{
   display: flex;
   flex-direction: column;
   padding: 1rem 2rem;
   gap: 1rem;
 }
-
 #contact img{
   width: 40px;
   fill: aliceblue;
@@ -302,7 +261,6 @@ section.slide-in {
     transform: translateX(0);
   }
 }
-
 @keyframes titles {
   0% {
     background-position: 96% 0%;
@@ -314,7 +272,6 @@ section.slide-in {
     background-position: 96% 0%;
   }
 }
-
 .sphere1{
   position: fixed;
   top: -20rem;
@@ -326,7 +283,6 @@ section.slide-in {
   z-index: -1;
   filter: blur(10px);
 }
-
 .sphere2{
   position: fixed;
   bottom: -30rem;
@@ -354,40 +310,33 @@ section.slide-in {
   .burger{
     display: flex;
   }
-
   .burger img{
     width: 20px;
   }
-
   nav{
     display: none;
   }
-
   header img{
     width: 30px;
   }
-
   header{
     height: 3rem;
   }
 
   /*hero*/
+  
   #hero{
     background-position: bottom right;
     background-size:contain;
     align-items: flex-start;
   }
-
   #hero .container{
     padding-top: 10 rem;
   }
-
   #hero span{
     font-size: 30px;
   }
-
   #hero h3{
     font-size: 16px;
   }
-
 }
