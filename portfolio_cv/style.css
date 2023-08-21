@@ -295,7 +295,7 @@ section.slide-in {
 @keyframes slideIn {
   0% {
     opacity: 0;
-    transform: translateX(800px);
+    transform: translateX(300px);
   }
   100% {
     opacity: 1;
@@ -319,7 +319,7 @@ section.slide-in {
   position: fixed;
   top: -15rem;
   left: -25rem;
-  background-image: linear-gradient(216deg, #bb7728, #3c699a);
+  background-image: linear-gradient(216deg, #bb76287d, #3c699a7c);
   border-radius: 50%;
   height: 30rem;
   width: 60rem;
@@ -331,7 +331,7 @@ section.slide-in {
   position: fixed;
   bottom: -25rem;
   right: -25rem;
-  background-image: linear-gradient(216deg, #bb7728, #3c699a);
+  background-image: linear-gradient(216deg, #bb762876, #3c699a74);
   border-radius: 50%;
   height: 40rem;
   width: 70rem;
