@@ -24,7 +24,7 @@ main {
 h1{
   font-weight: bold;
   font-size: 60px;
-  background: linear-gradient(216deg, #bb7728, #3c699a);
+  background: linear-gradient(216deg, #ed8925, #3c699a);
   background-size: 400% 400%;
   animation: titles 3s ease infinite;
   -webkit-background-clip: text;
@@ -96,7 +96,7 @@ nav ul li {
 
 nav li:hover {
   color: aliceblue;
-  background: linear-gradient(216deg, #bb7728, #3c699a);
+  background: linear-gradient(216deg, #ed8925, #3c699a);
   background-size: 400% 400%;
   animation: titles 3s ease infinite;
   -webkit-background-clip: text;
@@ -161,7 +161,7 @@ section {
 #hero span{
   font-weight: bold;
   font-size: 50px;
-  background: linear-gradient(216deg, #bb7728, #3c699a);
+  background: linear-gradient(216deg, #ed8925, #3c699a);
   background-size: 400% 400%;
   animation: titles 3s ease infinite;
   -webkit-background-clip: text;
@@ -252,7 +252,7 @@ section {
 }
 
 .project a:hover {
-  background: linear-gradient(216deg, #bb7728, #3c699a);
+  background: linear-gradient(216deg, #ed8925, #3c699a);
   background-size: 400% 400%;
   animation: titles 3s ease infinite;
 }
@@ -317,9 +317,9 @@ section.slide-in {
 
 .sphere1{
   position: fixed;
-  top: -15rem;
+  top: -20rem;
   left: -25rem;
-  background-image: linear-gradient(216deg, #bb76287d, #3c699a7c);
+  background-image: linear-gradient(216deg, #ed8925, #2a6bb0fd);
   border-radius: 50%;
   height: 30rem;
   width: 60rem;
@@ -329,9 +329,9 @@ section.slide-in {
 
 .sphere2{
   position: fixed;
-  bottom: -25rem;
+  bottom: -30rem;
   right: -25rem;
-  background-image: linear-gradient(216deg, #bb762876, #3c699a74);
+  background-image: linear-gradient(216deg, #2a6bb0fd, #ed8925);
   border-radius: 50%;
   height: 40rem;
   width: 70rem;
@@ -343,6 +343,12 @@ section.slide-in {
 
 @media screen and (max-width: 570px) { 
   
+  /*general*/
+
+  h1{
+    font-size: 40px;
+  }
+
   /*header*/
 
   .burger{
@@ -350,11 +356,19 @@ section.slide-in {
   }
 
   .burger img{
-    width: 30px;
+    width: 20px;
   }
 
   nav{
     display: none;
+  }
+
+  header img{
+    width: 30px;
+  }
+
+  header{
+    height: 3rem;
   }
 
   /*hero*/
@@ -365,7 +379,7 @@ section.slide-in {
   }
 
   #hero .container{
-    padding-top: 5rem;
+    padding-top: 10 rem;
   }
 
   #hero span{
