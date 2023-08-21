@@ -343,6 +343,8 @@ section.slide-in {
 
 @media screen and (max-width: 570px) { 
   
+  /*header*/
+
   .burger{
     display: flex;
   }
@@ -354,4 +356,15 @@ section.slide-in {
   nav{
     display: none;
   }
+
+  /*hero*/
+  #hero{
+    background-position: bottom;
+    align-items: flex-start;
+  }
+
+  #hero .container{
+    padding-top: 5rem;
+  }
+
 }
