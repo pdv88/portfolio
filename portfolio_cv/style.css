@@ -29,6 +29,28 @@ h1{
 ::-webkit-scrollbar{
   z-index: 0;
 }
+.sphere1{
+  position: fixed;
+  top: -20rem;
+  left: -20rem;
+  background-image: linear-gradient(216deg, #ed8925, #2a6bb0fd);
+  border-radius: 50%;
+  height: 30rem;
+  width: 70rem;
+  z-index: -1;
+  filter: blur(200px);
+}
+.sphere2{
+  position: fixed;
+  bottom: -30rem;
+  right: -25rem;
+  background-image: linear-gradient(120deg, #2a6bb0fd, #ed8925);
+  border-radius: 50%;
+  height: 40rem;
+  width: 70rem;
+  z-index: -1;
+  filter: blur(200px);
+}
 
 /*--------------------Header------------------------*/
 
@@ -274,28 +296,6 @@ section.slide-in {
     background-position: 96% 0%;
   }
 }
-.sphere1{
-  position: fixed;
-  top: -20rem;
-  left: -25rem;
-  background-image: linear-gradient(216deg, #ed8925, #2a6bb0fd);
-  border-radius: 50%;
-  height: 30rem;
-  width: 60rem;
-  z-index: -1;
-  filter: blur(10px);
-}
-.sphere2{
-  position: fixed;
-  bottom: -30rem;
-  right: -25rem;
-  background-image: linear-gradient(216deg, #2a6bb0fd, #ed8925);
-  border-radius: 50%;
-  height: 40rem;
-  width: 70rem;
-  z-index: -1;
-  filter: blur(5px);
-}
 
 /*--------------------Responsive------------------------*/
 
@@ -305,6 +305,14 @@ section.slide-in {
 
   h1{
     font-size: 40px;
+  }
+  .sphere1{
+    top: -30rem;
+    left: -25rem;
+  }
+  .sphere2{
+    bottom: -40rem;
+    right: -25rem;
   }
 
   /*header*/
