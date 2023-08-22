@@ -403,4 +403,9 @@ section.slide-in {
   .project .datos{
     padding-right: 2rem;
   }
+  .project a {
+    background: linear-gradient(216deg, #EBB363, #3c699a);
+    background-size: 400% 400%;
+    animation: titles 3s ease infinite;
+  }
 }
