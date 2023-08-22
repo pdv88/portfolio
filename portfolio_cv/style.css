@@ -392,10 +392,10 @@ section.slide-in {
 
   .project{
     flex-direction: column;
-
   }
   .project img{
     width: 80%;
+    object-fit: scale-down;
   }
   .project .datos{
     padding-right: 2rem;
