@@ -2,7 +2,7 @@
 function handleSectionIntersect(entries, observer) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('slide-in');
+      setTimeout(function(){entry.target.classList.add('slide-in')}, 500)
     } else {
       entry.target.classList.remove('slide-in');
     }

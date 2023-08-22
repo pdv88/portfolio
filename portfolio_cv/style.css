@@ -17,6 +17,7 @@
     overflow-x: hidden;
     height: 100dvh;
     width: 100%;
+    scroll-snap-type: y mandatory;
   }
   h1{
     font-weight: bold;
@@ -138,7 +139,6 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  scroll-snap-type: y mandatory;
   scroll-snap-align: start;
   height: 100dvh;
   padding-top: 5rem;
@@ -392,11 +392,12 @@ section.slide-in {
 
   .project{
     flex-direction: column;
+
   }
   .project img{
-    width: 100%;
+    width: 80%;
   }
-  .project .datos > img{
-    width: 70%;
+  .project .datos{
+    padding-right: 2rem;
   }
 }
