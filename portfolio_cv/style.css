@@ -27,7 +27,7 @@
     -webkit-text-fill-color: transparent;
   }
   ::-webkit-scrollbar{
-    z-index: 0;
+    display: none;
   }
   .sphere1{
     position: fixed;
@@ -124,7 +124,7 @@
 /*--------------------Secciones general------------------------*/
 
 .container {
-  max-width: 1500px;
+  max-width: 1200px;
   padding: 2rem;
   width: 100%;
 }
@@ -145,7 +145,6 @@ section {
 #hero {
   display: flex;
   justify-content: flex-start;
-  max-width: 1500px;
   width: 100%;
   padding-top: 100px;
   height: 100vh;
@@ -157,6 +156,7 @@ section {
 #hero .container {
   max-width: 600px;
   text-align: left;
+  padding-left: 5rem;
 }
 #hero .container :last-child{
   text-align: right;
@@ -169,6 +169,22 @@ section {
   animation: titles 3s ease infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+#hero a {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  text-decoration: none;
+  color: aliceblue;
+  background-color: #f0f0f07d;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  width: 100%
+}
+#hero a:hover {
+  background: linear-gradient(216deg, #EBB363, #3c699a);
+  background-size: 400% 400%;
+  animation: titles 3s ease infinite;
 }
 
 /*--------------------Seccion About------------------------*/
@@ -234,6 +250,7 @@ section {
   margin: 0;
 }
 .project a {
+  display: flex;
   margin-right: 10px;
   text-decoration: none;
   color: aliceblue;
@@ -350,11 +367,17 @@ section.slide-in {
   }
   #hero .container{
     padding-top: 10rem;
+    padding-left: 2rem;
   }
   #hero span{
     font-size: 30px;
   }
   #hero h3{
     font-size: 16px;
+  }
+  #hero a {
+    background: linear-gradient(216deg, #EBB363, #3c699a);
+    background-size: 400% 400%;
+    animation: titles 3s ease infinite;
   }
 }
