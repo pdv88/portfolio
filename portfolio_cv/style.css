@@ -332,6 +332,9 @@ section.slide-in {
   h1{
     font-size: 40px;
   }
+  section{
+    padding-top: 3rem;
+  }
   .sphere1{
     top: -25rem;
     left: -35rem;
