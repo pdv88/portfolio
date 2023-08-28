@@ -26,3 +26,16 @@ const sections = document.querySelectorAll('section');
 sections.forEach((section) => {
   sectionObserver.observe(section);
 });
+
+// Menu hamburguesa
+
+const burger = document.getElementById('burger-icon');
+const modal = document.getElementById('burger-modal');
+
+burger.addEventListener("click", () =>{
+  modal.style.visibility = "visible";
+});
+
+modal.addEventListener("click", () =>{
+  modal.style.visibility = "hidden";
+});

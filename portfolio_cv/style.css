@@ -41,19 +41,21 @@
     width: 70rem;
     z-index: -1;
     filter: blur(200px);
-    transition: all 500ms;
+    animation: titles 10s ease infinite;
+    background-size: 200% 200%;
   }
   .sphere2{
     position: fixed;
     bottom: -30rem;
     right: -25rem;
-    background-image: linear-gradient(120deg, #2a6bb0fd, #EBB363);
+    background-image: linear-gradient(216deg, #2a6bb0fd, #EBB363);
     border-radius: 50%;
     height: 40rem;
     width: 70rem;
     z-index: -1;
     filter: blur(200px);
-    transition: all 500ms;
+    animation: titles 10s ease infinite;
+    background-size: 200% 200%;
   }
 
 /*--------------------Header------------------------*/
@@ -67,7 +69,6 @@
     align-content: center;
     justify-content: space-between;
     position: fixed;
-    backdrop-filter: blur(10px);
   }
   header a {
     display: flex;
@@ -81,9 +82,14 @@
     width: 50px;
     object-fit: scale-down;
   }
-  .burger{
+  #burger{
     display: none;
     padding: 1rem;
+  }
+  #burger-icon{
+    width: 3rem;
+    padding: 0 1rem;
+    visibility: hidden;
   }
   nav {
     display: flex;
@@ -143,21 +149,54 @@ section {
   height: 100dvh;
   padding-top: 5rem;
 }
+#burger-modal{
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  gap: 10rem;
+  align-items: center;
+  visibility: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(50px);
+  
+}
+#burger-modal ul{
+  list-style: none;
+  text-align: center;
+}
+#burger-modal li{
+  color: aliceblue;
+  line-height: 4rem;
+  font-size: 24px;
+}
+#burger-modal a{
+  text-decoration: none;
+}
+#burger-modal img{
+  width: 60px;
+}
+#burger-icon{
+  visibility: visible;
+}
 
 /*--------------------Seccion Hero------------------------*/
 
 #hero {
   display: flex;
   justify-content:left;
-  max-width: 100%;
+  max-width: 1300px;
   width: 100%;
   padding-top: 100px;
   height: 100vh;
-  background-image: url("./Assets/img/Foto CV - TransparentGradient.png");
+  background-image: url("./Assets/img/Foto CV - TransparentGradientresponsive.png");
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: right;
 }
 #hero .container {
+  display: flex;
+  flex-direction: column;
   max-width: 600px;
   text-align: left;
   padding-left: 5rem;
@@ -166,13 +205,9 @@ section {
   text-align: right;
 }
 #hero span{
+  text-align: center;
   font-weight: bold;
   font-size: 50px;
-  background: linear-gradient(216deg, #EBB363, #3c699a);
-  background-size: 400% 400%;
-  animation: titles 3s ease infinite;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 #hero a {
   display: flex;
@@ -323,9 +358,11 @@ section.slide-in {
   }
 }
 
-/*--------------------Responsive------------------------*/
+/*----------------------------------------------------------------
+                            Responsive
+-----------------------------------------------------------------*/
 
-@media screen and (max-width: 570px) { 
+@media screen and (max-width: 900px) { 
   
   /*general*/
 
@@ -350,11 +387,11 @@ section.slide-in {
 
   /*header*/
 
-  .burger{
+  #burger{
     display: flex;
   }
-  .burger img{
-    width: 20px;
+  #burger img{
+    width: 30px;
   }
   nav{
     display: none;
@@ -370,12 +407,15 @@ section.slide-in {
   /*hero*/
   
   #hero{
-    background-position: bottom right;
-    background-size:contain;
+    background-image: url("./Assets/img/Foto CV - TransparentGradientresponsive.png");
+    background-position: bottom center;
+    background-size: 40cqmax;
+    justify-content: center;
     align-items: flex-start;
-    padding-top: 3rem;
+    padding-top: 1rem;
   }
   #hero .container{
+    max-width: 600px;
     padding-top: 10rem;
     padding-left: 2rem;
   }
@@ -395,6 +435,7 @@ section.slide-in {
 
   .project{
     flex-direction: column;
+    max-width: 500px;
   }
   .project img{
     width: 80%;
