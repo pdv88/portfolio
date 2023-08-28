@@ -33,9 +33,11 @@ const burger = document.getElementById('burger-icon');
 const modal = document.getElementById('burger-modal');
 
 burger.addEventListener("click", () =>{
+  modal.style.opacity = "1";
   modal.style.visibility = "visible";
 });
 
 modal.addEventListener("click", () =>{
+  modal.style.opacity = "0";
   modal.style.visibility = "hidden";
 });

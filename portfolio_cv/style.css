@@ -155,12 +155,13 @@ section {
   padding-top: 5rem;
   gap: 10rem;
   align-items: center;
+  opacity: 0;
   visibility: hidden;
   position: fixed;
   height: 100%;
   width: 100%;
   backdrop-filter: blur(50px);
-  
+  transition: 300ms;
 }
 #burger-modal ul{
   list-style: none;
