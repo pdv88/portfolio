@@ -153,7 +153,7 @@ section {
   display: flex;
   flex-direction: column;
   padding-top: 5rem;
-  gap: 10rem;
+  gap: 8rem;
   align-items: center;
   opacity: 0;
   visibility: hidden;
@@ -179,7 +179,7 @@ section {
   width: 60px;
 }
 #burger-icon{
-  visibility: visible;
+  visibility: hidden;
 }
 
 /*--------------------Seccion Hero------------------------*/
@@ -187,19 +187,21 @@ section {
 #hero {
   display: flex;
   justify-content:left;
-  max-width: 1300px;
+  max-width: 1500px;
   width: 100%;
   padding-top: 100px;
   height: 100vh;
-  background-image: url("./Assets/img/Foto CV - TransparentGradientresponsive.png");
+  background-image: url("./Assets/img/hero.png");
+  background-size: 60%;
   background-repeat: no-repeat;
   background-position: right;
 }
 #hero .container {
   display: flex;
   flex-direction: column;
-  max-width: 600px;
+  max-width: 800px;
   text-align: left;
+  text-shadow: 0px 0px 10px black;
   padding-left: 5rem;
 }
 #hero .container :nth-child(3){
@@ -388,11 +390,8 @@ section.slide-in {
 
   /*header*/
 
-  #burger{
-    display: flex;
-  }
-  #burger img{
-    width: 30px;
+  #burger-icon{
+    visibility: visible;
   }
   nav{
     display: none;
@@ -408,7 +407,7 @@ section.slide-in {
   /*hero*/
   
   #hero{
-    background-image: url("./Assets/img/Foto CV - TransparentGradientresponsive.png");
+    background-image: url("./Assets/img/hero.png");
     background-position: bottom center;
     background-size: 40cqmax;
     justify-content: center;
