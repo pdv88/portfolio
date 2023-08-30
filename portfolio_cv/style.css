@@ -260,7 +260,8 @@ section {
   gap: 1rem;
 }
 #experience img{
-  width: 40px;
+  width: 60px;
+  height: 60px;
 }
 
 /*--------------------Seccion Projectos------------------------*/
@@ -278,9 +279,17 @@ section {
 }
 #projects .container {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
+}
+#projects a.other{
+  text-decoration: none;
+  color: aliceblue;
+  font-family: 'Gruppo', sans-serif;
+  font-size: 80px;
+  text-shadow: 5px 5px 20px black;
 }
 .project {
   display: flex;
@@ -321,6 +330,31 @@ section.slide-in {
   animation: slideIn 0.5s ease-in-out;
   opacity: 1;
 }
+#other-projects{
+  display: flex;
+  flex-direction: column;
+}
+#other-projects a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: aliceblue;
+}
+#other-projects .container{
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 5rem;
+}
+#other-projects img{
+  width: 60px;
+  height: 60px;
+}
 
 /*--------------------Seccion Contacto------------------------*/
 
@@ -342,7 +376,7 @@ section.slide-in {
 }
 #contact img{
   width: 40px;
-  fill: aliceblue;
+  height: 40px;
 }
 
 /*--------------------Animaciones------------------------*/
