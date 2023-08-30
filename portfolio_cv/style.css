@@ -478,6 +478,9 @@ section.slide-in {
 
   /*projects*/
 
+  #projects .container{
+    flex-direction: column;
+  }
   .project{
     flex-direction: column;
     max-width: 500px;
