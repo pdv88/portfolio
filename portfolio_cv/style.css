@@ -151,6 +151,10 @@ section {
   height: 100dvh;
   padding-top: 5rem;
 }
+section ul{
+  text-align: left;
+  padding-left: 3rem;
+}
 #burger-modal{
   display: flex;
   flex-direction: column;
@@ -243,10 +247,10 @@ section {
 /*--------------------Seccion About------------------------*/
 
 #about .container{
-  max-width: 600px;
+  max-width: 1200px;
 }
 #about p {
-  text-align: left;
+  text-align: center;
 }
 
 /*--------------------Seccion Education------------------------*/
