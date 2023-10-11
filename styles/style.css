@@ -200,7 +200,7 @@ section ul{
   width: 100%;
   padding-top: 100px;
   height: 100vh;
-  background-image: url("./Assets/img/hero.png");
+  background-image: url("../Assets/img/hero.png");
   background-size: 50rem;
   background-repeat: no-repeat;
   background-position: right;
