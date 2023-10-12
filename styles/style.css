@@ -183,6 +183,7 @@ section ul{
 }
 #burger-modal a{
   text-decoration: none;
+  color: aliceblue;
 }
 #burger-modal img{
   width: 60px;
