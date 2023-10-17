@@ -22,30 +22,30 @@
       <img  id="burger-icon" src="./Assets/icons/bars-solid.svg" alt="burger menu">
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a class="nav_link" href="#about">About</a></li>
+          <li><a class="nav_link" href="#education">Education</a></li>
+          <li><a class="nav_link" href="#experience">Experience</a></li>
+          <li><a class="nav_link" href="#projects">Projects</a></li>
+          <li><a class="nav_link" href="#contact">Contact</a></li>
         </ul>
       </nav>
-
     </header>
     
-    <main>
-      
+    <main> 
       <div id="burger-modal">
         <a href="#hero">
           <img src="./Assets/img/logo_pabloDeLaGarza.png" alt="Logo">
         </a>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a class="nav_link_burger" href="#about">About</a></li>
+          <li><a class="nav_link_burger" href="#education">Education</a></li>
+          <li><a class="nav_link_burger" href="#experience">Experience</a></li>
+          <li><a class="nav_link_burger" href="#projects">Projects</a></li>
+          <li><a class="nav_link_burger" href="#contact">Contact</a></li>
         </ul>
       </div>
 
-      <section id="hero">
+      <section class="mainSection" id="hero">
         <div class="container">
           <span>Pablo De La Garza</span>
           <h3>Web developer based in Spain</h3>
@@ -53,21 +53,21 @@
         </div>
       </section>
 
-      <section id="about">
+      <section class="mainSection" id="about">
         <div class="container">
           <h1>About Me</h1>
+          <img src="./Assets/img/profile-pic 4.png" alt="">
           <p>
             Hi, I'm Pablo De La Garza. A Web developer with an architectural background. 
             For me, a lot of principles that apply to architecture design are useful on web design. 
             Things like element heriarchy, color theory, ergonomy, etc.
             I started my developer journey as a self tought student and I'm currently completing a masters
             degree on web design & development at CEI in Seville, Spain.
-
           </p>
         </div>
       </section>
 
-      <section id="education">
+      <section class="mainSection" id="education">
         <div class="container">
           <h1>Education</h1>
           <div class="studies-contanier">
@@ -105,7 +105,93 @@
         </div>
       </section>
 
-      <section id="projects">
+      <section class="mainSection" id="experience">
+        <div class="tabs container">
+          <h1>Experience</h1>
+          <div class="tabs_container">
+            <button class="tab">Web Developer</button>
+            <button class="tab">Partner</button>
+            <button class="tab">3D Artist</button>
+            <button class="tab">BIM Manager</button>
+          </div>
+          <div class="tab_content">
+            <h3>Web Developer</h3>
+            <i><strong>Freelance</strong><br> Oct 2023 - Current</i>
+            <p>
+              Working on developing a platform where the architectural visualization company
+              can show their portfolio, publicize their services, make estimates in real time
+              and show the progress of the contracted work.
+            </p>
+            <div class="experience_icon_container">
+              <img class="experience_icon" src="./Assets/icons/figma.svg" alt="figma Icon">
+              <img class="experience_icon" src="./Assets/icons/html5.svg" alt="HTML Icon">
+              <img class="experience_icon" src="./Assets/icons/css3-alt.svg" alt="CSS Icon">
+              <img class="experience_icon" src="./Assets/icons/square-js.svg" alt="JavaScript Icon">
+              <img class="experience_icon" src="./Assets/icons/bootstrap.svg" alt="Bootstrap Icon">
+              <img class="experience_icon" src="./Assets/icons/sass.svg" alt="SASS Icon">
+            </div>
+          </div>
+          <div class="tab_content">
+            <h3>Partner</h3>
+            <i><strong>Versus Iluminación</strong><br> Oct 2020 - Jan 2023</i>
+            <p>
+              Managed lighting design projects from development,
+              concept to installation, ensuring compliance with
+              deadlines and budget constraints. I coordinated with
+              suppliers, contractors and other team members
+              to ensure a smooth execution of the lightning design.
+            </p>
+            <div class="experience_icon_container">
+              <img class="experience_icon" src="./Assets/icons/photoshop.svg" alt="Photoshop Icon">
+              <img class="experience_icon" src="./Assets/icons/vray.svg" alt="Vray Icon">
+              <img class="experience_icon" src="./Assets/icons/sketchup.svg" alt="Sketchup Icon">
+              <img class="experience_icon" src="./Assets/icons/autodesk.svg" alt="Autocad Icon">
+              <img class="experience_icon" src="./Assets/icons/dialux.svg" alt="Dialux Icon">
+            </div>
+          </div>
+          <div class="tab_content">
+            <h3>3D Artist</h3>
+            <i><strong>Freelance</strong><br> Oct 2017 - Aug 2020</i>
+            <p>
+              I used architectural visualization techniques to create
+              compelling visual representations of design concepts,
+              which helped in project communication and presentations. 
+              Demonstrating a great eye for detail and a deep
+              understanding of architectural aesthetics, which resulted in
+              Visually striking and realistic representations.
+            </p>
+            <div class="experience_icon_container">
+              <img class="experience_icon" src="./Assets/icons/sketchup.svg" alt="sketchup Icon">
+              <img class="experience_icon" src="./Assets/icons/vray.svg" alt="vray Icon">
+              <img class="experience_icon" src="./Assets/icons/photoshop.svg" alt="Photoshop Icon">
+              <img class="experience_icon" src="./Assets/icons/revit.png" alt="Revit Icon">
+              <img class="experience_icon" src="./Assets/icons/autocad.png" alt="Autocad Icon">
+            </div>
+          </div>
+          <div class="tab_content">
+            <h3>BIM Manager</h3>
+            <i><strong>Grupo Cador</strong><br> Sept 2014 - Oct 2017</i>
+            <p>
+              Developed and applied BIM standards, file structure and
+              data management protocols, ensuring the integrity of
+              data and effective collaboration. I implemented solids
+              quality control procedures of the BIM model, which
+              resulted in accurate and compatible models that met the
+              project requirements.
+            </p>
+            <div class="experience_icon_container">
+              <img class="experience_icon" src="./Assets/icons/autocad.png" alt="Autocad Icon">
+              <img class="experience_icon" src="./Assets/icons/revit.png" alt="Revit Icon">
+              <img class="experience_icon" src="./Assets/icons/navisworks.png" alt="Navisworks Icon">
+              <img class="experience_icon" src="./Assets/icons/sketchup.svg" alt="sketchup Icon">
+              <img class="experience_icon" src="./Assets/icons/vray.svg" alt="vray Icon">
+              <img class="experience_icon" src="./Assets/icons/photoshop.svg" alt="Photoshop Icon">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mainSection" id="projects">
         <h1>Projects</h1>
         <div class="container">
           <a href="#zoover"><img src="./Assets/img/logo_zoover-white.png" alt="Zoover logo"></a>
@@ -116,9 +202,9 @@
 
       <section id="zoover">
         <div class="project">
-          <img src="./Assets/img/mockup_zoover.png" alt="Zoover Mockup">
+          <img class="mockup" src="./Assets/img/mockup_zoover.png" alt="Zoover Mockup">
           <div class="datos">
-            <img src="./Assets/img/logo_zoover-white.png" alt="Zoover logo">
+            <img class="logo" src="./Assets/img/logo_zoover-white.png" alt="Zoover logo">
             <h3>Pet Medical Network App</h3>
             <p>An app designed with figma using the UX-UI skills I 
               learned on my web development master. 
@@ -135,9 +221,9 @@
 
       <section id="salutable">
         <div class="project">
-          <img src="./Assets/img/mockup_salutable.png" alt="Salutable Mockup">
+          <img class="mockup" src="./Assets/img/mockup_salutable.png" alt="Salutable Mockup">
           <div class="datos">
-            <img src="./Assets/img/logo_salutable.png" alt="Salutable logo">
+            <img class="logo" src="./Assets/img/logo_salutable.png" alt="Salutable logo">
             <h3>Balanced Meal Planner App</h3>
             <p>Salutable is an app designed to make your weekly meal plan easy depending on the kind of diet that you want. 
               It takes in consideration your alergies, food and diet preferences. The main features of the app are:
@@ -172,7 +258,7 @@
         </div>
       </section>
 
-      <section id="contact">
+      <section class="mainSection" id="contact">
         <h1>Contact Me</h1>
         <div class="icon-container">
           <p>Mail

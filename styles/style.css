@@ -1,5 +1,3 @@
-
-
 /*--------------------CSS General------------------------*/
   *{
     box-sizing: border-box;
@@ -125,6 +123,14 @@
     transform: translateY(-3px);
     transition: all 500ms;
   }
+  .activeLink {
+    border-bottom:2px solid #EBB363;
+    background: linear-gradient(216deg, #EBB363, #3c699a);
+    background-size: 400% 400%;
+    animation: titles 3s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   nav a{
     text-decoration: none;
     color: aliceblue;
@@ -143,7 +149,6 @@ section {
   justify-content: center;
   text-align: center;
   max-width: 1500px;
-  opacity: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,6 +160,7 @@ section ul{
   text-align: left;
   padding-left: 3rem;
 }
+/* -----------------------Burger modal----------------------- */
 #burger-modal{
   display: flex;
   flex-direction: column;
@@ -200,7 +206,7 @@ section ul{
   max-width: 1500px;
   width: 100%;
   padding-top: 100px;
-  height: 100vh;
+  height: 100%;
   background-image: url("../Assets/img/hero.png");
   background-size: 50rem;
   background-repeat: no-repeat;
@@ -248,10 +254,21 @@ section ul{
 /*--------------------Seccion About------------------------*/
 
 #about .container{
-  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  max-width: 900px;
+}
+#about img {
+  width: 35%;
+  border-radius: 50%;
+  align-self: center;
+  padding: 1rem;
 }
 #about p {
-  text-align: center;
+  text-align: left;
+  padding: 0 .5rem;
 }
 
 /*--------------------Seccion Education------------------------*/
@@ -303,6 +320,86 @@ section ul{
   height: 50px;
 }
 
+/*--------------------Seccion Experiencia------------------------*/
+
+.tabs {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  gap: 1rem;
+}
+.tabs_container {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-basis: 20%;
+  gap: .2rem;
+}
+.tabs h1 {
+  display: flex;
+  flex-basis: 20%;
+  align-self: center;
+  padding-top: 2.5rem;
+}
+.tab {
+  border: 1px solid #EBB363;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-shadow: 0px 0px 15px black;
+  color: aliceblue;
+  border-radius: .5rem;
+  width: 100%;
+  height: 4rem;
+  cursor: pointer;
+  padding: 1rem 1rem;
+}
+.tab:hover,  .tab:focus{
+  background-color: #ffffff17;
+}
+.active {
+  cursor: default;
+  background-color: #D3825f;
+  border: 1px solid transparent;
+  background: linear-gradient(216deg, #EBB363, #3c699a);
+  background-size: 400% 400%;
+  animation: titles 3s ease infinite;
+}
+.active:hover {
+  cursor: default;
+}
+.tab_content {
+  display: none;
+  flex-direction: column;
+  padding: .5rem .7rem;
+  flex-basis: 60%;
+  max-width: 900px;
+  margin: auto;
+}
+.tab_content h3 {
+  font-size: 1.5rem;
+}
+.tab_content i {
+  font-size: .8rem;
+}
+.tab_content p {
+  text-align: left;
+  padding: 1rem 0;
+}
+.experience_icon_container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.experience_icon {
+  width: 5rem;
+  height: 5rem;
+  padding: .5rem;
+}
+
 /*--------------------Seccion Projectos------------------------*/
 
 #projects {
@@ -333,14 +430,17 @@ section ul{
 .project {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
-.project img{
-  width: 50%;
-  flex-basis: 50%;
+.project .logo{
+  width: 60%;
+  max-width: 400px;
+}
+.mockup {
+  max-width: 650px;
 }
 .project .datos{
   padding: 2rem;
-  padding-right: 5rem;
 }
 .project p{
   text-align: left;
@@ -358,16 +458,12 @@ section ul{
   padding: .5rem 1rem;
   border-radius: .5rem;
   width: 100%;
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 .project a:hover {
   background: linear-gradient(216deg, #EBB363, #3c699a);
   background-size: 400% 400%;
   animation: titles 3s ease infinite;
-}
-section.slide-in {
-  animation: slideIn 0.5s ease-in-out;
-  opacity: 1;
 }
 #other-projects{
   display: flex;
@@ -375,6 +471,7 @@ section.slide-in {
 }
 #other-projects a{
   display: flex;
+  width: 8rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -391,8 +488,8 @@ section.slide-in {
   padding-top: 5rem;
 }
 #other-projects img{
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 5q0px;
 }
 
 /*--------------------Seccion Contacto------------------------*/
@@ -420,16 +517,6 @@ section.slide-in {
 
 /*--------------------Animaciones------------------------*/
 
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translateX(200px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 @keyframes titles {
   0% {
     background-position: 96% 0%;
@@ -468,6 +555,9 @@ section.slide-in {
     filter: blur(100px);
     transition: all 500ms;
   }
+  .container {
+    padding: 0 .4rem;
+  }
 
   /*header*/
 
@@ -493,12 +583,13 @@ section.slide-in {
     background-size: contain;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 1rem;
+    padding-top: 3rem;
+
   }
   #hero .container{
-    max-width: 100%;
-    padding-top: 10rem;
-    padding-left: 2rem;
+    width: 100%;
+    padding: 0;
+    padding-top: 8rem;
     align-items: center;
   }
   #hero span{
@@ -513,6 +604,19 @@ section.slide-in {
     background-size: 400% 400%;
     animation: titles 3s ease infinite;
     border: 1px solid transparent;
+  }
+
+  /* About */
+
+  #about {
+    display: flex;
+    justify-content: space-around;
+  }
+  #about img {
+    width: 50%;
+  }
+  #about p {
+    text-align: justify;
   }
 
   /*Education*/
@@ -550,6 +654,23 @@ section.slide-in {
     gap: 2rem;
   }
 
+  /* Experience */
+
+  .tab{
+    padding: .5rem;
+    font-size: 1rem;
+  }
+  .tabs_container {
+    flex-basis: 15%;
+  }
+  .tab_content {
+    flex-basis: 65%;
+  }
+  .experience_icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
   /*projects*/
 
   #projects .container{
@@ -557,18 +678,25 @@ section.slide-in {
   }
   .project{
     flex-direction: column;
-    max-width: 500px;
+    height: 100%;
   }
-  .project img{
-    width: 80%;
-    object-fit: scale-down;
+  .project .mockup{
+    max-width: 70%;
+    max-height: 25%;
+
   }
   .project .datos{
-    padding-right: 2rem;
+    padding: 0 1rem;
   }
   .project a {
     background: linear-gradient(216deg, #EBB363, #3c699a);
     background-size: 400% 400%;
     animation: titles 3s ease infinite;
+  }
+
+  /* Contact */
+
+  #contact {
+    justify-content: space-around;
   }
 }
