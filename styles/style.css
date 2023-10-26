@@ -11,6 +11,7 @@
     scroll-behavior: smooth;
   }
   body {
+    position: fixed;
     display: flex;
     width: 100%;
     height: 100dvh;
@@ -69,6 +70,8 @@
     animation: titles 10s ease infinite;
     background-size: 200% 200%;
   }
+  /* cambia el tamaño del nombre, el padding de las secciones 
+  y la posicion de las esferas decorativas del fondo en pantallas de menos de 900px*/
   @media screen and (max-width: 900px) {
     h1{
       font-size: 40px;
@@ -186,6 +189,8 @@
     color: aliceblue;
     font-weight: bold;
   }
+  /* hace visible el icono burger, esconde los links en el header, cambia el tamaño del 
+  logo y la altura del header en pantallas de menos de 900px */
   @media screen and (max-width: 900px) { 
     #burger-icon{
       visibility: visible;
@@ -211,9 +216,7 @@
   padding: 0 2rem;
   width: 100%;
 }
-/* da altura de pantalla completa a todas las secciones, le da un ancho maximo para 
-no estirarse mucho en pantallas grandes y le da un scroll snap align para que el scroll 
-alinee automaticamente el borde superior del main con el borde superior de la seccion */
+/* hace que la seccion ocupe 100% de la pantalla, da el snap del scroll al principio de la seccion */
 section {
   margin: auto;
   display: flex;
@@ -235,6 +238,7 @@ section ul{
   .container {
     padding: 0 .4rem;
   }
+  /* se pone este padding para dejar libre el espacio del header */
   section {
     padding-top: 3rem;
   }
@@ -249,8 +253,7 @@ completa con un fondo translucido y visibilidad nula que se activa con javascrip
 #burger-modal{
   display: flex;
   flex-direction: column;
-  padding-top: 5rem;
-  gap: 8rem;
+
   align-items: center;
   opacity: 0;
   visibility: hidden;
@@ -260,28 +263,41 @@ completa con un fondo translucido y visibilidad nula que se activa con javascrip
   backdrop-filter: blur(50px);
   transition: 300ms;
   z-index: 2;
+  align-content: space-evenly;
+}
+#burger-modal nav {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 /* da estilo a la lista de links del modal burger */
 #burger-modal ul{
   list-style: none;
-  text-align: center;
-  position: absolute;
-  top: 40%;
+  width: 100%;
 }
 /* da estilo a los items de la lista del modal burger */
 #burger-modal li{
   color: aliceblue;
+  width: 100%;
   line-height: 4rem;
   font-size: 24px;
+  justify-content: center;
 }
 /* da estilo a los links de la lista del modal burger */
 #burger-modal a{
   text-decoration: none;
   color: aliceblue;
+  text-align: center;
 }
 /* da tamaño al logo del modal burger */
 #burger-modal img{
   width: 60px;
+}
+/* da fondo al container del logo para hacerlo mas visible */
+.logo-burger {
+  padding: 1rem;
+  background-color: rgba(213, 215, 249, 0.251);
+  width: 100%;
 }
 
 /*-------------------------------------------------------------
@@ -343,6 +359,8 @@ completa con un fondo translucido y visibilidad nula que se activa con javascrip
     animation: titles 3s ease infinite;
     border: 1px solid transparent;
   }
+  /* ajusta la distribucion de la seccion hero, hace el nombre con tamaño variable y le 
+  da animacion al link de contacto sin necesidad de hover */
   @media screen and (max-width: 900px) { 
     #hero{
       background-image: url("../Assets/img/hero.png");
@@ -359,6 +377,7 @@ completa con un fondo translucido y visibilidad nula que se activa con javascrip
       padding-top: 8rem;
       align-items: center;
     }
+    /* hace que el nombre se ajuste de tamaño de acuerdo al ancho de la pantalla */
     #hero span{
       font-size: 9vw;
       padding-bottom: 1rem;
@@ -377,7 +396,7 @@ completa con un fondo translucido y visibilidad nula que se activa con javascrip
 /*------------------------------------------------------------
 -------------------------Seccion About------------------------
 ------------------------------------------------------------*/
-
+  
   #about .container{
     display: flex;
     flex-direction: column;
@@ -397,10 +416,6 @@ completa con un fondo translucido y visibilidad nula que se activa con javascrip
     padding: 0 .5rem;
   }
   @media screen and (max-width: 900px) { 
-    #about {
-      display: flex;
-      justify-content: space-around;
-    }
     #about img {
       width: 50%;
     }
