@@ -1,31 +1,10 @@
-// -------------------------------------------------------------------
-// ----------------------activar link con click-----------------------
-// -------------------------------------------------------------------
-
-//  declaracion de variables para array de links en header y menu hamburguesa
-let navLinks = document.getElementsByClassName('nav_link');
-let burgerNavLinks = document.getElementsByClassName('nav_link_burger');
-
-// bucle for para agregar detectores de evento a los links de navegacion
-for (let i = 0; i < navLinks.length; i++) {
-  navLinks[i].addEventListener('click', activeLink)
-  burgerNavLinks[i].addEventListener('click', activeLink)
-}
-
-// funcion para quitar clase activeLink a links anteriores y agregarlo al nuevo link
-function activeLink(e) {
-  for (let i = 0; i < navLinks.length; i++) {
-    navLinks[i].classList.remove('activeLink');
-    burgerNavLinks[i].classList.remove('activeLink');
-  }
-  e.target.classList.add('activeLink');
-}
-
 // -----------------------------------------------------------------
 // ------------------- activar link con scroll----------------------
 // -----------------------------------------------------------------
 
-// variable para seleccionar las secciones principales del html
+// variable para seleccionar las secciones principales del html y links de navegacion
+let navLinks = document.getElementsByClassName('nav_link');
+let burgerNavLinks = document.getElementsByClassName('nav_link_burger');
 let sections = document.querySelectorAll('.mainSection');
 
 // declaracion de funcion del observador
