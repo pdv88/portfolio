@@ -93,7 +93,8 @@ function showTab(e) {
 
     /* condicional para ver si el contenido de la pestaña pertenece a la pestaña que detono el evento
     si sí se agregara display flex y la clase active a la pestaña, de lo contrario los quitara*/
-    if (contentTabs[i].firstChild.nextSibling.innerHTML == e.target.innerHTML) {
+    if (contentTabs[i].firstChild.nextElementSibling.innerHTML == e.target.innerHTML) {
+      
       contentTabs[i].style.display = 'flex';
       buttonTabs[i].classList.add('active');
     } else {
