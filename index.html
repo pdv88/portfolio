@@ -2,21 +2,38 @@
 <html lang="en">
   <head>
     <!-- declaracion del tipo de caracteres usado en la pagina -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- titulo de la pagina visto en la pestaña del navegador -->
     <title>Portfolio | Pablo de la Garza</title>
     <!-- links de la tipografia importada de google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Prompt:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gruppo&family=Prompt:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <!-- link del CSS para dar estilo a la pagina -->
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css" />
     <!-- link del icono para personalizar el favicon -->
-    <link rel="icon" href="./Assets/img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./Assets/img/favicon.png" type="image/x-icon" />
     <!-- el script se declara en el head y usa la propiedad "defer" para que se descargue al mismo tiempo que 
       el html pero que no se ejecute hasta que el html termine de descargarse -->
     <script src="./scripts/scripts.js" defer></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BRD40D7MPM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-BRD40D7MPM");
+    </script>
   </head>
   <body>
     <!-- ------------------------------------------------------------------------------- -->
@@ -26,11 +43,15 @@
       <!-- contenedor del logo -->
       <div class="img-container">
         <a href="#hero">
-          <img src="./Assets/img/logo_pabloDeLaGarza.png" alt="Logo">
+          <img src="./Assets/img/logo_pabloDeLaGarza.png" alt="Logo" />
         </a>
       </div>
       <!-- icono menu hamburguesa que se muestra con javascript -->
-      <img  id="burger-icon" src="./Assets/icons/bars-solid.svg" alt="burger menu">
+      <img
+        id="burger-icon"
+        src="./Assets/icons/bars-solid.svg"
+        alt="burger menu"
+      />
       <!-- navegacion de la pagina que se esconde cuando la pantalla es de menos de 900px -->
       <nav>
         <!-- lista de links que se le agrega el estilo de activo cuando javascript detecta si esta visible esa seccion  -->
@@ -46,19 +67,21 @@
     <!-- ------------------------------------------------------------------------------- -->
     <!-------------------------------------- Main ----------------------------------------->
     <!-- ------------------------------------------------------------------------------- -->
-    <main> 
+    <main>
       <!-- Menu Hamburguesa -->
       <div id="burger-modal">
         <!-- link que lleva a la seccion hero de la pagina -->
         <a class="logo-burger" href="#hero">
-          <img src="./Assets/img/logo_pabloDeLaGarza.png" alt="Logo">
+          <img src="./Assets/img/logo_pabloDeLaGarza.png" alt="Logo" />
         </a>
         <nav>
           <!-- lista de links que se le agrega el estilo de activo cuando javascript detecta si esta visible esa seccion  -->
           <ul>
             <li><a class="nav_link_burger" href="#about">About</a></li>
             <li><a class="nav_link_burger" href="#education">Education</a></li>
-            <li><a class="nav_link_burger" href="#experience">Experience</a></li>
+            <li>
+              <a class="nav_link_burger" href="#experience">Experience</a>
+            </li>
             <li><a class="nav_link_burger" href="#projects">Projects</a></li>
             <li><a class="nav_link_burger" href="#contact">Contact</a></li>
           </ul>
@@ -84,14 +107,15 @@
           <!-- Titulo de seccion -->
           <h1>About Me</h1>
           <!-- Imagen de perfil -->
-          <img src="./Assets/img/profile-pic.png" alt="Profile picture">
+          <img src="./Assets/img/profile-pic.png" alt="Profile picture" />
           <!-- Bio  -->
           <p>
-            Hi, I'm Pablo De La Garza. A Web developer with an architectural background. 
-            For me, a lot of principles that apply to architecture design are useful on web design. 
-            Things like element heriarchy, color theory, ergonomy, etc.
-            I started my developer journey as a self tought student and I'm currently completing a masters
-            degree on web design & development at CEI in Seville, Spain.
+            Hi, I'm Pablo De La Garza. A Web developer with an architectural
+            background. For me, a lot of principles that apply to architecture
+            design are useful on web design. Things like element heriarchy,
+            color theory, ergonomy, etc. I started my developer journey as a
+            self tought student and I'm currently completing a masters degree on
+            web design & development at CEI in Seville, Spain.
           </p>
         </div>
       </section>
@@ -107,39 +131,55 @@
             <!-- Card estudio arquitectura -->
             <article class="study">
               <h2>Bachelor of Architecture</h2>
-              <img src="./Assets/icons/caret-down-solid.svg" alt="Caret down">
-              <p>UVM <br> May 2015</p>
+              <img src="./Assets/icons/caret-down-solid.svg" alt="Caret down" />
+              <p>
+                UVM <br />
+                May 2015
+              </p>
             </article>
             <!-- Card estudio Odin Project -->
             <article class="study">
-              <h2>Full-stack <br>Javascript</h2>
-              <img src="./Assets/icons/caret-down-solid.svg" alt="Caret down">
-              <p>Odin Project <br>Dic 2022</p>
+              <h2>Full-stack <br />Javascript</h2>
+              <img src="./Assets/icons/caret-down-solid.svg" alt="Caret down" />
+              <p>Odin Project <br />Dic 2022</p>
             </article>
             <!-- Card estudio Meta Front-end developer -->
             <article class="study">
               <h2>Front-end Development</h2>
-              <img src="./Assets/icons/caret-down-solid.svg" alt="Caret down">
-              <p>META Certification <br>Jan 2023</p>
+              <img src="./Assets/icons/caret-down-solid.svg" alt="Caret down" />
+              <p>META Certification <br />Jan 2023</p>
             </article>
             <!-- Card estudio Master Diseño y Desarrollo Web -->
             <article class="study">
               <h2>Master Web Design & Development</h2>
-              <img src="./Assets/icons/caret-down-solid.svg" alt="Caret down">
-              <p>CEI Sevilla <br> In progress</p>
+              <img src="./Assets/icons/caret-down-solid.svg" alt="Caret down" />
+              <p>
+                CEI Sevilla <br />
+                In progress
+              </p>
             </article>
           </div>
           <h1>Tech Stack</h1>
           <!-- Contenedor de iconos de skills -->
           <div class="skills-container">
-            <p>HTML5<img src="./Assets/icons/html5.svg" alt="HTML5 icon"></p>
-            <p>CSS3<img src="./Assets/icons/css3-alt.svg" alt="CSS3 icon"></p>
-            <p>Javascript<img src="./Assets/icons/square-js.svg" alt="JavaScript icon"></p>
-            <p>React<img src="./Assets/icons/react.svg" alt="React icon"></p>
-            <p>Git<img src="./Assets/icons/git-alt.svg" alt="Git icon"></p>
-            <p>Figma<img src="./Assets/icons/figma.svg" alt="Figma icon"></p>
-            <p>Bootstrap<img src="./Assets/icons/bootstrap.svg" alt="Bootstrap icon"></p>
-            <p>SASS<img src="./Assets/icons/sass.svg" alt="SASS icon"></p>            
+            <p>HTML5<img src="./Assets/icons/html5.svg" alt="HTML5 icon" /></p>
+            <p>CSS3<img src="./Assets/icons/css3-alt.svg" alt="CSS3 icon" /></p>
+            <p>
+              Javascript<img
+                src="./Assets/icons/square-js.svg"
+                alt="JavaScript icon"
+              />
+            </p>
+            <p>React<img src="./Assets/icons/react.svg" alt="React icon" /></p>
+            <p>Git<img src="./Assets/icons/git-alt.svg" alt="Git icon" /></p>
+            <p>Figma<img src="./Assets/icons/figma.svg" alt="Figma icon" /></p>
+            <p>
+              Bootstrap<img
+                src="./Assets/icons/bootstrap.svg"
+                alt="Bootstrap icon"
+              />
+            </p>
+            <p>SASS<img src="./Assets/icons/sass.svg" alt="SASS icon" /></p>
           </div>
         </div>
       </section>
@@ -163,21 +203,49 @@
             <!-- puesto de trabajo -->
             <h3>Web Developer</h3>
             <!-- Empresa y fechas de trabajo -->
-            <i><strong>Freelance</strong><br> Oct 2023 - Current</i>
+            <i
+              ><strong>Freelance</strong><br />
+              Oct 2023 - Current</i
+            >
             <!-- descripcion de trabajo -->
             <p>
-              Working on developing a platform where the architectural visualization company
-              can show their portfolio, publicize their services, make estimates in real time
-              and show the progress of the contracted work.
+              Working on developing a platform where the architectural
+              visualization company can show their portfolio, publicize their
+              services, make estimates in real time and show the progress of the
+              contracted work.
             </p>
             <!-- contenedor de iconos de tecnologias utilizadas -->
             <div class="experience_icon_container">
-              <img class="experience_icon" src="./Assets/icons/figma.svg" alt="figma Icon">
-              <img class="experience_icon" src="./Assets/icons/html5.svg" alt="HTML Icon">
-              <img class="experience_icon" src="./Assets/icons/css3-alt.svg" alt="CSS Icon">
-              <img class="experience_icon" src="./Assets/icons/square-js.svg" alt="JavaScript Icon">
-              <img class="experience_icon" src="./Assets/icons/bootstrap.svg" alt="Bootstrap Icon">
-              <img class="experience_icon" src="./Assets/icons/sass.svg" alt="SASS Icon">
+              <img
+                class="experience_icon"
+                src="./Assets/icons/figma.svg"
+                alt="figma Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/html5.svg"
+                alt="HTML Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/css3-alt.svg"
+                alt="CSS Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/square-js.svg"
+                alt="JavaScript Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/bootstrap.svg"
+                alt="Bootstrap Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/sass.svg"
+                alt="SASS Icon"
+              />
             </div>
           </div>
           <!------------------ Contenido pestaña Project manager ---------------------------->
@@ -185,22 +253,44 @@
             <!-- puesto de trabajo -->
             <h3>Project Manager</h3>
             <!-- Empresa y fechas de trabajo -->
-            <i><strong>Versus Iluminación</strong><br> Aug 2020 - Oct 2023</i>
+            <i
+              ><strong>Versus Iluminación</strong><br />
+              Aug 2020 - Oct 2023</i
+            >
             <!-- descripcion de trabajo -->
             <p>
-              Managed lighting design projects from development,
-              concept to installation, ensuring compliance with
-              deadlines and budget constraints. I coordinated with
-              suppliers, contractors and other team members
-              to ensure a smooth execution of the lightning design.
+              Managed lighting design projects from development, concept to
+              installation, ensuring compliance with deadlines and budget
+              constraints. I coordinated with suppliers, contractors and other
+              team members to ensure a smooth execution of the lightning design.
             </p>
             <!-- contenedor de iconos de tecnologias utilizadas -->
             <div class="experience_icon_container">
-              <img class="experience_icon" src="./Assets/icons/photoshop.svg" alt="Photoshop Icon">
-              <img class="experience_icon" src="./Assets/icons/vray.svg" alt="Vray Icon">
-              <img class="experience_icon" src="./Assets/icons/sketchup.svg" alt="Sketchup Icon">
-              <img class="experience_icon" src="./Assets/icons/autodesk.svg" alt="Autocad Icon">
-              <img class="experience_icon" src="./Assets/icons/dialux.svg" alt="Dialux Icon">
+              <img
+                class="experience_icon"
+                src="./Assets/icons/photoshop.svg"
+                alt="Photoshop Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/vray.svg"
+                alt="Vray Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/sketchup.svg"
+                alt="Sketchup Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/autodesk.svg"
+                alt="Autocad Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/dialux.svg"
+                alt="Dialux Icon"
+              />
             </div>
           </div>
           <!--------------------- Contenido pestaña Artista 3D ------------------------------>
@@ -208,23 +298,45 @@
             <!-- puesto de trabajo -->
             <h3>3D Artist</h3>
             <!-- Empresa y fechas de trabajo -->
-            <i><strong>Freelance</strong><br> Feb 2017 - Aug 2020</i>
+            <i
+              ><strong>Freelance</strong><br />
+              Feb 2017 - Aug 2020</i
+            >
             <!-- descripcion de trabajo -->
             <p>
-              I used architectural visualization techniques to create
-              compelling visual representations of design concepts,
-              which helped in project communication and presentations. 
-              Demonstrating a great eye for detail and a deep
-              understanding of architectural aesthetics, which resulted in
-              Visually striking and realistic representations.
+              I used architectural visualization techniques to create compelling
+              visual representations of design concepts, which helped in project
+              communication and presentations. Demonstrating a great eye for
+              detail and a deep understanding of architectural aesthetics, which
+              resulted in Visually striking and realistic representations.
             </p>
             <!-- contenedor de iconos de tecnologias utilizadas -->
             <div class="experience_icon_container">
-              <img class="experience_icon" src="./Assets/icons/sketchup.svg" alt="sketchup Icon">
-              <img class="experience_icon" src="./Assets/icons/vray.svg" alt="vray Icon">
-              <img class="experience_icon" src="./Assets/icons/photoshop.svg" alt="Photoshop Icon">
-              <img class="experience_icon" src="./Assets/icons/revit.png" alt="Revit Icon">
-              <img class="experience_icon" src="./Assets/icons/autocad.png" alt="Autocad Icon">
+              <img
+                class="experience_icon"
+                src="./Assets/icons/sketchup.svg"
+                alt="sketchup Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/vray.svg"
+                alt="vray Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/photoshop.svg"
+                alt="Photoshop Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/revit.png"
+                alt="Revit Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/autocad.png"
+                alt="Autocad Icon"
+              />
             </div>
           </div>
           <!-------------------- Contenido pestaña Bim Manager ------------------------------>
@@ -232,24 +344,50 @@
             <!-- puesto de trabajo -->
             <h3>BIM Manager</h3>
             <!-- Empresa y fechas de trabajo -->
-            <i><strong>Grupo Cador</strong><br> Nov 2014 - Feb 2017</i>
+            <i
+              ><strong>Grupo Cador</strong><br />
+              Nov 2014 - Feb 2017</i
+            >
             <!-- descripcion de trabajo -->
             <p>
-              Developed and applied BIM standards, file structure and
-              data management protocols, ensuring the integrity of
-              data and effective collaboration. I implemented solids
-              quality control procedures of the BIM model, which
-              resulted in accurate and compatible models that met the
-              project requirements.
+              Developed and applied BIM standards, file structure and data
+              management protocols, ensuring the integrity of data and effective
+              collaboration. I implemented solids quality control procedures of
+              the BIM model, which resulted in accurate and compatible models
+              that met the project requirements.
             </p>
             <!-- contenedor de iconos de tecnologias utilizadas -->
             <div class="experience_icon_container">
-              <img class="experience_icon" src="./Assets/icons/autocad.png" alt="Autocad Icon">
-              <img class="experience_icon" src="./Assets/icons/revit.png" alt="Revit Icon">
-              <img class="experience_icon" src="./Assets/icons/navisworks.png" alt="Navisworks Icon">
-              <img class="experience_icon" src="./Assets/icons/sketchup.svg" alt="sketchup Icon">
-              <img class="experience_icon" src="./Assets/icons/vray.svg" alt="vray Icon">
-              <img class="experience_icon" src="./Assets/icons/photoshop.svg" alt="Photoshop Icon">
+              <img
+                class="experience_icon"
+                src="./Assets/icons/autocad.png"
+                alt="Autocad Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/revit.png"
+                alt="Revit Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/navisworks.png"
+                alt="Navisworks Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/sketchup.svg"
+                alt="sketchup Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/vray.svg"
+                alt="vray Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/photoshop.svg"
+                alt="Photoshop Icon"
+              />
             </div>
           </div>
         </div>
@@ -261,8 +399,12 @@
         <h1>Projects</h1>
         <!-- contenedor de links a secciones de proyectos individuales -->
         <div class="container">
-          <a href="#zoover"><img src="./Assets/img/logo_zoover-white.png" alt="Zoover logo"></a>
-          <a href="#salutable"><img src="./Assets/img/logo_salutable.png" alt="Salutable logo"></a>
+          <a href="#zoover"
+            ><img src="./Assets/img/logo_zoover-white.png" alt="Zoover logo"
+          /></a>
+          <a href="#salutable"
+            ><img src="./Assets/img/logo_salutable.png" alt="Salutable logo"
+          /></a>
           <a class="other" href="#other-projects">Other</a>
         </div>
       </section>
@@ -270,24 +412,38 @@
       <section id="zoover">
         <div class="project">
           <!-- mockup de zoover -->
-          <img class="mockup" src="./Assets/img/mockup_zoover.png" alt="Zoover Mockup">
+          <img
+            class="mockup"
+            src="./Assets/img/mockup_zoover.png"
+            alt="Zoover Mockup"
+          />
           <!-- contenedor de datos -->
           <div class="datos">
             <!-- logo de zoover -->
-            <img class="logo" src="./Assets/img/logo_zoover-white.png" alt="Zoover logo">
+            <img
+              class="logo"
+              src="./Assets/img/logo_zoover-white.png"
+              alt="Zoover logo"
+            />
             <!-- subtitulo del proyecto -->
             <h3>Pet Medical Network App</h3>
             <!-- Descripcion de proyecto -->
-            <p>An app designed with figma using the UX-UI skills I 
-              learned on my web development master. 
-              The goal of this app is to make a network of 
-              veterinary profesionals where the users are able to book and
-              manage their appointments. Also they have their pets medical history 
-              including vaccines.
+            <p>
+              An app designed with figma using the UX-UI skills I learned on my
+              web development master. The goal of this app is to make a network
+              of veterinary profesionals where the users are able to book and
+              manage their appointments. Also they have their pets medical
+              history including vaccines.
             </p>
             <!-- Links del prototipo y presentacion de investigacion UX -->
-            <a href="https://www.figma.com/proto/XH72q9REZ5txDtfPz2GBmD/Zoover---Proyecto-final-UX-UI?page-id=0%3A1&type=design&node-id=87-231&viewport=206%2C414%2C0.07&t=P9vC5K6vxWLMNAu9-1&scaling=min-zoom&mode=design">UX Research</a>
-            <a href="https://www.figma.com/proto/XH72q9REZ5txDtfPz2GBmD/Zoover---Proyecto-final-UX-UI?page-id=1%3A6&type=design&node-id=159-546&viewport=152%2C25%2C0.25&t=4ShONQetrHtrjMeT-1&scaling=scale-down&starting-point-node-id=96%3A145&mode=design">Prototype</a>
+            <a
+              href="https://www.figma.com/proto/XH72q9REZ5txDtfPz2GBmD/Zoover---Proyecto-final-UX-UI?page-id=0%3A1&type=design&node-id=87-231&viewport=206%2C414%2C0.07&t=P9vC5K6vxWLMNAu9-1&scaling=min-zoom&mode=design"
+              >UX Research</a
+            >
+            <a
+              href="https://www.figma.com/proto/XH72q9REZ5txDtfPz2GBmD/Zoover---Proyecto-final-UX-UI?page-id=1%3A6&type=design&node-id=159-546&viewport=152%2C25%2C0.25&t=4ShONQetrHtrjMeT-1&scaling=scale-down&starting-point-node-id=96%3A145&mode=design"
+              >Prototype</a
+            >
           </div>
         </div>
       </section>
@@ -295,16 +451,27 @@
       <section id="salutable">
         <div class="project">
           <!-- mockup de salutable -->
-          <img class="mockup" src="./Assets/img/mockup_salutable.png" alt="Salutable Mockup">
+          <img
+            class="mockup"
+            src="./Assets/img/mockup_salutable.png"
+            alt="Salutable Mockup"
+          />
           <!-- contenedor de datos del proyecto -->
           <div class="datos">
             <!-- logo del proyecto -->
-            <img class="logo" src="./Assets/img/logo_salutable.png" alt="Salutable logo">
+            <img
+              class="logo"
+              src="./Assets/img/logo_salutable.png"
+              alt="Salutable logo"
+            />
             <!-- Subtitulo del proyecto -->
             <h3>Balanced Meal Planner App</h3>
             <!-- Descripcion del proyecto -->
-            <p>Salutable is an app designed to make your weekly meal plan easy depending on the kind of diet that you want. 
-              It takes in consideration your alergies, food and diet preferences. The main features of the app are:
+            <p>
+              Salutable is an app designed to make your weekly meal plan easy
+              depending on the kind of diet that you want. It takes in
+              consideration your alergies, food and diet preferences. The main
+              features of the app are:
             </p>
             <ul>
               <li>Food group balance graph.</li>
@@ -314,10 +481,13 @@
               <li>Community section.</li>
             </ul>
             <!-- Link del prototipo -->
-            <a href="https://www.figma.com/proto/HE5zQxJ9pmkE3bmPMIRoZg/Pablo---Salutable?page-id=0%3A1&type=design&node-id=3-2&viewport=149%2C260%2C0.11&t=CQFn7Bhxk5Rp4G6W-1&scaling=scale-down&starting-point-node-id=3%3A2&show-proto-sidebar=1&mode=design">Prototype</a>
+            <a
+              href="https://www.figma.com/proto/HE5zQxJ9pmkE3bmPMIRoZg/Pablo---Salutable?page-id=0%3A1&type=design&node-id=3-2&viewport=149%2C260%2C0.11&t=CQFn7Bhxk5Rp4G6W-1&scaling=scale-down&starting-point-node-id=3%3A2&show-proto-sidebar=1&mode=design"
+              >Prototype</a
+            >
           </div>
         </div>
-      </section>      
+      </section>
       <!---------------------------------- Otros proyectos ---------------------------------->
       <section id="other-projects">
         <!-- titulo de seccion Otros proyectos -->
@@ -326,19 +496,31 @@
         <div class="container">
           <!-- Proyecto de calculadora -->
           <a href="https://pdv88.github.io/calculator/" target="_blank">
-            <img src="./Assets/icons/calculator-solid.svg" alt="Calculator icon">Calculator
+            <img
+              src="./Assets/icons/calculator-solid.svg"
+              alt="Calculator icon"
+            />Calculator
           </a>
           <!-- Proyecto de app Libreria -->
           <a href="https://pdv88.github.io/library-app/" target="_blank">
-            <img src="./Assets/icons/book-open-reader-solid.svg" alt="Library app">Library App
+            <img
+              src="./Assets/icons/book-open-reader-solid.svg"
+              alt="Library app"
+            />Library App
           </a>
           <!-- Proyecto etch a sketch -->
           <a href="https://pdv88.github.io/etch-a-sketch/" target="_blank">
-            <img src="./Assets/icons/note-sticky-solid.svg" alt="etch-a-sketch">Etch-A-Sketch
+            <img
+              src="./Assets/icons/note-sticky-solid.svg"
+              alt="etch-a-sketch"
+            />Etch-A-Sketch
           </a>
           <!-- Proyecto juego de tic tac toe -->
           <a href="https://pdv88.github.io/tic-tac-toe/" target="_blank">
-            <img src="./Assets/icons/hashtag-solid.svg" alt="Tic-Tac-Toe">Tic-tac-toe
+            <img
+              src="./Assets/icons/hashtag-solid.svg"
+              alt="Tic-Tac-Toe"
+            />Tic-tac-toe
           </a>
         </div>
       </section>
@@ -351,27 +533,53 @@
         <!-- Contenedor formas de contacto -->
         <div class="icon-container">
           <!-- contacto por mail -->
-          <p>Mail
+          <p>
+            Mail
             <a href="mailto:888pdv@gmail.com">
-              <img class="contact-icon" src="./Assets/icons/envelope-regular.svg" alt="mail">
+              <img
+                class="contact-icon"
+                src="./Assets/icons/envelope-regular.svg"
+                alt="mail"
+              />
             </a>
           </p>
           <!-- contacto por telefono -->
-          <p>Phone
-            <a href="https://api.whatsapp.com/send?phone=34624867819" target="_blank">
-              <img class="contact-icon" src="./Assets/icons/whatsapp.svg" alt="Phone">
+          <p>
+            Phone
+            <a
+              href="https://api.whatsapp.com/send?phone=34624867819"
+              target="_blank"
+            >
+              <img
+                class="contact-icon"
+                src="./Assets/icons/whatsapp.svg"
+                alt="Phone"
+              />
             </a>
           </p>
           <!-- contacto por github -->
-          <p>Github
+          <p>
+            Github
             <a href="https://www.github.com/pdv88" target="_blank">
-              <img class="contact-icon" src="./Assets/icons/github.svg" alt="Github">
+              <img
+                class="contact-icon"
+                src="./Assets/icons/github.svg"
+                alt="Github"
+              />
             </a>
           </p>
           <!-- contacto por linkedin -->
-          <p>LinkedIn
-            <a href="https://www.linkedin.com/in/pablo-de-la-garza-vargas-95528670" target="_blank">
-              <img class="contact-icon" src="./Assets/icons/linkedin-in.svg" alt="LinkedIn">
+          <p>
+            LinkedIn
+            <a
+              href="https://www.linkedin.com/in/pablo-de-la-garza-vargas-95528670"
+              target="_blank"
+            >
+              <img
+                class="contact-icon"
+                src="./Assets/icons/linkedin-in.svg"
+                alt="LinkedIn"
+              />
             </a>
           </p>
         </div>
