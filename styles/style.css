@@ -74,7 +74,7 @@
   y la posicion de las esferas decorativas del fondo en pantallas de menos de 900px*/
   @media screen and (max-width: 900px) {
     h1{
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
     section{
       padding-top: 3rem;
@@ -477,6 +477,7 @@ completa con un fondo translucido y visibilidad nula que se activa con javascrip
     width: 100%;
     justify-content: space-around;
     max-width: 1200px;
+    padding: 0 1rem;
   }
   /* alinea, separa y justifica el instituto y año de estudio  */
   #education p{
@@ -524,6 +525,9 @@ completa con un fondo translucido y visibilidad nula que se activa con javascrip
       width: 2rem;
       height: 2rem;
     } 
+    .skills-container{
+      font-size: .7rem;
+    }
   }
 
 /*-------------------------------------------------------------
@@ -611,14 +615,14 @@ completa con un fondo translucido y visibilidad nula que se activa con javascrip
   /* da estilo al contenedor de los iconos de las tecnologias utilizadas */
   .experience_icon_container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly ;
     width: 100%;
     flex-wrap: wrap;
   }
   /* da tamaño y padding a los iconos de tecnologias usadas */
   .experience_icon {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     padding: .5rem;
   }
   /* cambia el tamaño de la letra de las pestañas, el flex basis para darle mas espacio a la 
@@ -680,7 +684,7 @@ completa con un fondo translucido y visibilidad nula que se activa con javascrip
   .project {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
   }
   /* da tamaño variable al ancho de la pantalla al logo del proyecto con un maximo de 400px */
   .project .logo{
@@ -769,6 +773,9 @@ completa con un fondo translucido y visibilidad nula que se activa con javascrip
     .project{
       flex-direction: column;
       height: 100%;
+    }
+    .project .logo{
+      width: 10rem;
     }
     /* cambia el tamaño de los mockups */
     .mockup{
