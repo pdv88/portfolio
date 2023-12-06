@@ -655,8 +655,7 @@ completa con un fondo translucido y visibilidad nula que se activa con javascrip
   /* da tamaño y padding a los logos de los proyectos */
   #projects img{
     width: 350px;
-    height: 115px;
-    object-fit: scale-down;
+    height: auto;
     padding: 1rem 2rem;
   }
   /* selector del contenedor de los logos de los proyectos en el que les da una separacion, justificacion y alineacion */
@@ -695,6 +694,7 @@ completa con un fondo translucido y visibilidad nula que se activa con javascrip
   /* selector del contenedor de los datos del proyecto que le da padding */
   .project .datos{
     padding: 2rem;
+    max-width: 40rem;
   }
   /* selector de la descripcion del proyecto que justifica el tecto y le da padding */
   .project p{
@@ -759,6 +759,7 @@ completa con un fondo translucido y visibilidad nula que se activa con javascrip
     /* cambia el tamaño de los logos de los proyectos */
     #projects img {
       width: 250px;
+      height: auto;
     }
     /* cambia el tamaño de la letra del link a los otros proyectos */
     #projects a.other {
