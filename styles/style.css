@@ -615,7 +615,7 @@ completa con un fondo translucido y visibilidad nula que se activa con javascrip
   /* da estilo al contenedor de los iconos de las tecnologias utilizadas */
   .experience_icon_container {
     display: flex;
-    justify-content: space-evenly ;
+    justify-content: space-evenly;
     width: 100%;
     flex-wrap: wrap;
   }
@@ -691,14 +691,14 @@ completa con un fondo translucido y visibilidad nula que se activa con javascrip
     width: 60%;
     max-width: 400px;
   }
-  /* selector del mockup del proyecto que le da un ancho maximo de 650px */
   .mockup {
-    max-width: 650px;
+    width: 50%;
   }
   /* selector del contenedor de los datos del proyecto que le da padding */
   .project .datos{
     padding: 2rem;
     max-width: 40rem;
+    flex-basis: 50%;
   }
   /* selector de la descripcion del proyecto que justifica el tecto y le da padding */
   .project p{
