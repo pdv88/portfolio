@@ -19,6 +19,7 @@
     <link rel="icon" href="./Assets/img/favicon.png" type="image/x-icon" />
     <!-- el script se declara en el head y usa la propiedad "defer" para que se descargue al mismo tiempo que 
       el html pero que no se ejecute hasta que el html termine de descargarse -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="./scripts/scripts.js" defer></script>
     <!-- Google tag (gtag.js) -->
     <script
@@ -67,7 +68,7 @@
     <!-- ------------------------------------------------------------------------------- -->
     <!-------------------------------------- Main ----------------------------------------->
     <!-- ------------------------------------------------------------------------------- -->
-    <main>
+    <main id="main-scroll">
       <!-- Menu Hamburguesa -->
       <div id="burger-modal">
         <!-- link que lleva a la seccion hero de la pagina -->
@@ -92,12 +93,35 @@
       <!-- ------------------------------------------------------------------------------- -->
       <section class="mainSection" id="hero">
         <div class="container">
-          <span>Pablo de la Garza</span>
-          <!-- Pequeña descripcion -->
-          <h3>Web developer based in Spain</h3>
-          <!-- Link a seccion de cnotacto -->
-          <a href="#contact">Contact me</a>
+          <div class="hero-left">
+            <span>Pablo de la Garza</span>
+            <!-- Pequeña descripcion -->
+            <h3>Full-Stack Developer</h3>
+            <!-- Link a seccion de contacto -->
+            <a href="#contact">Contact me</a>
+          </div>
+          <div class="exp-summary">
+            <div>
+              <span>1+</span>
+              <p>Years of experience</p>
+            </div>
+            <div>
+              <span>3+</span>
+              <p>Projects</p>
+            </div>
+            <div>
+              <span>10k+</span>
+              <p>Hours worked</p>
+            </div>
+          </div>
+          <div class="scroll-down-arrow">
+            <svg width="100" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polyline points="10,10 50,25 90,10" stroke="#222" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </div>
         </div>
+        
+        
       </section>
       <!-- ------------------------------------------------------------------------------- -->
       <!---------------------------------- Seccion About ------------------------------------>
@@ -178,13 +202,30 @@
                 alt="Tailwind icon"
               />Tailwind
             </p>
-            <p><img src="./Assets/icons/node-js.svg" alt="Nodejs icon" />NodeJS</p>
-            <p><img src="./Assets/icons/expressjs.svg" alt="Express icon" />Express</p>
+            <p>
+              <img src="./Assets/icons/node-js.svg" alt="Nodejs icon" />NodeJS
+            </p>
+            <p>
+              <img
+                src="./Assets/icons/expressjs.svg"
+                alt="Express icon"
+              />Express
+            </p>
             <p><img src="./Assets/icons/mysql.svg" alt="MySQL icon" />MySQL</p>
-            <p><img src="./Assets/icons/puppeteer.svg" alt="Puppeteer Icon">Puppeteer</p>
+            <p>
+              <img
+                src="./Assets/icons/puppeteer.svg"
+                alt="Puppeteer Icon"
+              />Puppeteer
+            </p>
             <p><img src="./Assets/icons/git-alt.svg" alt="Git icon" />Git</p>
             <p><img src="./Assets/icons/figma.svg" alt="Figma icon" />Figma</p>
-            <p><img src="./Assets/icons/whimsical.svg" alt="Whimsical icon" />Whimsical</p>
+            <p>
+              <img
+                src="./Assets/icons/whimsical.svg"
+                alt="Whimsical icon"
+              />Whimsical
+            </p>
             <p><img src="./Assets/icons/miro.svg" alt="Miro icon" />Miro</p>
           </div>
         </div>
@@ -218,9 +259,9 @@
               Developed a trademark monitoring platform that allows the user to
               automatically add trademarks from IMPI and receive alerts when a
               new update is available. The user also gets weekly and monthly
-              reports of deathlines and updates. I used the SERN stack to develop 
-              the platform. I also used puppeteer to scrape the
-              IMPI website for the trademark info and cronjobs to schedule the
+              reports of deathlines and updates. I used the SERN stack to
+              develop the platform. I also used puppeteer to scrape the IMPI
+              website for the trademark info and cronjobs to schedule the
               scraping of the notifications and reports.
             </p>
             <!-- contenedor de iconos de tecnologias utilizadas -->
@@ -275,10 +316,11 @@
                 src="./Assets/icons/mysql.svg"
                 alt="MySQL Icon"
               />
-              <img 
-              class="experience_icon"
-              src="./Assets/icons/puppeteer.svg" 
-              alt="Puppetter Icon">
+              <img
+                class="experience_icon"
+                src="./Assets/icons/puppeteer.svg"
+                alt="Puppetter Icon"
+              />
             </div>
           </div>
           <!------------------ Contenido pestaña Project manager ---------------------------->
@@ -433,109 +475,171 @@
         <!-- contenedor de links a secciones de proyectos individuales -->
         <div class="container">
           <a href="#suitpi">
-            <img src="./Assets/img/logo_suitpi.png" alt="SIUTPI logo" />
+            <img src="./Assets/img/logo_suitpi_header.png" alt="SIUTPI logo" />
           </a>
-          <a href="#littleLemon"
-          ><img src="./Assets/img/little_lemon_logo.svg" alt="Little Lemon logo"
+          <a href="#PDRenders"
+          ><img src="./Assets/img/Logo_pdrenders.webp" alt="PD Renders logo"
           /></a>
-          <a href="#zoover"
-            ><img src="./Assets/img/logo_zoover-white.png" alt="Zoover logo"
+          <a href="#littleLemon"
+            ><img
+              src="./Assets/img/little_lemon_logo.svg"
+              alt="Little Lemon logo"
           /></a>
         </div>
       </section>
 
-            <!--------------------------------- Proyecto Little Lemon -------------------------------->
-            <section id="suitpi">
-              <div class="project">
-                <!-- mockup de salutable -->
-                <img
-                  class="mockup"
-                  src="./Assets/img/suitpi-mockup1.png"
-                  alt="Salutable Mockup"
-                />
-                <!-- contenedor de datos del proyecto -->
-                <div class="datos">
-                  <!-- logo del proyecto -->
-                  <img
-                    class="logo"
-                    src="./Assets/img/logo_suitpi.png"
-                    alt="Little Lemon logo"
-                  />
-                  <!-- Subtitulo del proyecto -->
-                  <h3>Trademark Monitor</h3>
-                  <!-- Descripcion del proyecto -->
-                  <p>
-                    SUITPI is a trademark monitoring platform that allows the user to
-                    automatically add trademarks from IMPI and receive alerts
-                    when a new update is available. 
-                    The user also gets weekly and monthly reports of deathlines and updates.
-                  </p>
-                  <h3>Tech Stack</h3>
-                  <div class="experience_icon_container">
-                    <img
-                      class="experience_icon"
-                      src="./Assets/icons/html5.svg"
-                      alt="HTML Icon"
-                    />
-                    <img
-                      class="experience_icon"
-                      src="./Assets/icons/css3-alt.svg"
-                      alt="CSS Icon"
-                    />
-                    <img
-                      class="experience_icon"
-                      src="./Assets/icons/square-js.svg"
-                      alt="Javascript Icon"
-                    />
-                    <img
-                      class="experience_icon"
-                      src="./Assets/icons/react.svg"
-                      alt="React Icon"
-                    />
-                    <img
-                      class="experience_icon"
-                      src="./Assets/icons/vite.svg"
-                      alt="Vite Icon"
-                    />
-                    <img
-                      class="experience_icon"
-                      src="./Assets/icons/expressjs.svg"
-                      alt="Expressjs Icon"
-                    />
-                    <img
-                      class="experience_icon"
-                      src="./Assets/icons/node-js.svg"
-                      alt="Node.js Icon"
-                    />
-                    <img
-                      class="experience_icon"
-                      src="./Assets/icons/mysql.svg"
-                      alt="MySQL Icon"
-                    />
-                    <img 
-                    class="experience_icon"
-                    src="./Assets/icons/tailwind.svg" 
-                    alt="Tailwind Icon"
-                    />
-                    <img 
-                    class="experience_icon"
-                    src="./Assets/icons/puppeteer.svg" 
-                    alt="Puppeteer Icon"
-                    />
-                  </div>
-                  <!-- Link del prototipo -->
-                  <a
-                    href="https://www.suitpi.com"
-                    >SUITPI Website</a
-                  >
-                </div>
-              </div>
-            </section>
-
-      <!--------------------------------- Proyecto Little Lemon -------------------------------->
-      <section id="littleLemon">
+      <!--------------------------------- Proyecto SuitPI -------------------------------->
+      <section class="mainSection" id="suitpi">
         <div class="project">
-          <!-- mockup de salutable -->
+          <!-- mockup de SuitPI -->
+          <img
+            class="mockup"
+            src="./Assets/img/suitpi_deskMockup.webp"
+            alt="SuitPI Mockup"
+          />
+          <!-- contenedor de datos del proyecto -->
+          <div class="datos">
+            <!-- logo del proyecto -->
+            <img
+              class="logo"
+              src="./Assets/img/logo_suitpi_header.png"
+              alt="SuitPI logo"
+            />
+            <!-- Subtitulo del proyecto -->
+            <h3>Trademark Monitor</h3>
+            <!-- Descripcion del proyecto -->
+            <p>
+              SuitPI is a trademark monitoring platform that allows the user to
+              automatically add trademarks from IMPI and receive alerts when a
+              new update is available. The user also gets weekly and monthly
+              reports of deathlines and updates.
+            </p>
+            <h3>Tech Stack</h3>
+            <div class="experience_icon_container">
+              <img
+                class="experience_icon"
+                src="./Assets/icons/html5.svg"
+                alt="HTML Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/css3-alt.svg"
+                alt="CSS Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/square-js.svg"
+                alt="Javascript Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/react.svg"
+                alt="React Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/vite.svg"
+                alt="Vite Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/expressjs.svg"
+                alt="Expressjs Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/node-js.svg"
+                alt="Node.js Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/mysql.svg"
+                alt="MySQL Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/tailwind.svg"
+                alt="Tailwind Icon"
+              />
+              <img
+                class="experience_icon"
+                src="./Assets/icons/puppeteer.svg"
+                alt="Puppeteer Icon"
+              />
+            </div>
+            <!-- Link del prototipo -->
+            <a href="https://www.suitpi.com">Website</a>
+            <a href="https://github.com/pdv88/suitpi-public">Github</a>
+          </div>
+        </div>
+      </section>
+
+      
+      <!---------------------------------- Proyecto PD Renders ---------------------------------->
+      <section class="mainSection" id="PDRenders">
+        <div class="project">
+          <!-- mockup de PD Renders -->
+          <img
+          class="mockup"
+          src="./Assets/img/pdrenders_mockup.png"
+          alt="PD Renders Mockup"
+          />
+          <!-- contenedor de datos -->
+          <div class="datos">
+            <!-- logo de zoover -->
+            <img
+            class="logo"
+            src="./Assets/img/Logo_pdrenders.webp"
+            alt="Zoover logo"
+            />
+            <!-- subtitulo del proyecto -->
+            <h3>Architectural visualization Studio</h3>
+            <!-- Descripcion de proyecto -->
+            <p>
+              PD Renders is a 3D visualization studio that specializes in
+              creating high-quality architectural renderings and animations. The
+              website showcases the studio's portfolio, services, and contact
+              information. It was built using React and Tailwind CSS. Future
+              updates will include user acounts to track the progress of the
+              projects and revision control.
+            </p>
+            <h3>Tech Stack</h3>
+            <div class="experience_icon_container">
+              <img
+              class="experience_icon"
+              src="./Assets/icons/react.svg"
+              alt="React Icon"
+              />
+              <img
+              class="experience_icon"
+              src="./Assets/icons/tailwind.svg"
+              alt="Tailwind Icon"
+              />
+              <img
+              class="experience_icon"
+              src="./Assets/icons/square-js.svg"
+              alt="Javascript Icon"
+              />
+            </div>
+            <!-- Links del prototipo y presentacion de investigacion UX -->
+            <a
+            href="https://www.pdrenders.com"
+            target="_blank"
+            >Website</a
+            >
+            <a
+            href="https://github.com/pdv88/pd-renders"
+            target="_blank"
+            >Github</a
+            >
+          </div>
+        </div>
+      </section>
+      
+      <!--------------------------------- Proyecto Little Lemon -------------------------------->
+      <section class="mainSection"  id="littleLemon">
+        <div class="project">
+          <!-- mockup de Little Lemon -->
           <img
             class="mockup"
             src="./Assets/img/little_lemon_mockup.png"
@@ -599,83 +703,18 @@
                 src="./Assets/icons/mysql.svg"
                 alt="MySQL Icon"
               />
-              
-
             </div>
             <!-- Link del prototipo -->
-            <a
-              href="https://little-lemon-7nf0.onrender.com"
-              >Little Lemon Website</a
+            <a href="https://little-lemon-7nf0.onrender.com"
+              >Website</a
             >
-            <a
-              href="https://github.com/pdv88/Proyecto-final"
-              >Github</a
-            >
+            <a href="https://github.com/pdv88/Proyecto-final">Github</a>
           </div>
         </div>
       </section>
-
-            <!---------------------------------- Proyecto Zoover ---------------------------------->
-            <section id="zoover">
-              <div class="project">
-                <!-- mockup de zoover -->
-                <img
-                  class="mockup"
-                  src="./Assets/img/mockup_zoover.png"
-                  alt="Zoover Mockup"
-                />
-                <!-- contenedor de datos -->
-                <div class="datos">
-                  <!-- logo de zoover -->
-                  <img
-                    class="logo"
-                    src="./Assets/img/logo_zoover-white.png"
-                    alt="Zoover logo"
-                  />
-                  <!-- subtitulo del proyecto -->
-                  <h3>Pet Medical Network App</h3>
-                  <!-- Descripcion de proyecto -->
-                  <p>
-                    An app designed with figma using the UX-UI skills I learned on my
-                    web development master. The goal of this app is to make a network
-                    of veterinary profesionals where the users are able to book and
-                    manage their appointments. Also they have their pets medical
-                    history including vaccines.
-                  </p>
-                  <h3>Tech Stack</h3>
-                  <div class="experience_icon_container">
-                    <img
-                      class="experience_icon"
-                      src="./Assets/icons/figma.svg"
-                      alt="Figma Icon"
-                    />
-                    <img
-                      class="experience_icon"
-                      src="./Assets/icons/miro.svg"
-                      alt="Miro Icon"
-                    />
-                    <img
-                      class="experience_icon"
-                      src="./Assets/icons/whimsical.svg"
-                      alt="Whimsical Icon"
-                    />
-                  </div>
-                  <!-- Links del prototipo y presentacion de investigacion UX -->
-                  <a
-                    href="https://www.figma.com/proto/XH72q9REZ5txDtfPz2GBmD/Zoover---Proyecto-final-UX-UI?page-id=0%3A1&type=design&node-id=87-231&viewport=206%2C414%2C0.07&t=P9vC5K6vxWLMNAu9-1&scaling=min-zoom&mode=design"
-                    >UX Research</a
-                  >
-                  <a
-                    href="https://www.figma.com/proto/XH72q9REZ5txDtfPz2GBmD/Zoover---Proyecto-final-UX-UI?page-id=1%3A6&type=design&node-id=159-546&viewport=152%2C25%2C0.25&t=4ShONQetrHtrjMeT-1&scaling=scale-down&starting-point-node-id=96%3A145&mode=design"
-                    >Prototype</a
-                  >
-                </div>
-              </div>
-            </section>
-
-
+      
       <!-- ------------------------------------------------------------------------------- -->
-      <!---------------------------------- Seccion Contato ---------------------------------->
+      <!---------------------------------- Seccion Contacto ---------------------------------->
       <!-- ------------------------------------------------------------------------------- -->
       <section class="mainSection" id="contact">
         <!-- Titulo seccion -->
@@ -722,7 +761,7 @@
           <p>
             LinkedIn
             <a
-              href="https://www.linkedin.com/in/pablo-de-la-garza-vargas-95528670"
+              href="https://www.linkedin.com/in/pablo-de-la-garza/"
               target="_blank"
             >
               <img
@@ -734,7 +773,7 @@
           </p>
         </div>
         <!-- copywright -->
-        <p>&copy; Copyright Pablo De La Garza Vargas 2024</p>
+        <p>&copy; Copyright Pablo De La Garza Vargas 2025</p>
       </section>
     </main>
     <!-- Divs decorativos del fondo con animacion gradiente -->

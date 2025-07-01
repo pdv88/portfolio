@@ -103,3 +103,46 @@ function showTab(e) {
     }
   }
 }
+
+// -------------------------------------------------------------
+// ------------------- GSAP Animations -------------------------
+// -------------------------------------------------------------
+
+sections.forEach(section => {
+  // Selecciona todos los hijos directos del section para animar
+  const children = section.querySelectorAll('*');
+
+  // Oculta los elementos antes de animar
+  gsap.set(children, {
+    opacity: 0,
+    y: 60,
+    delay: 0.2
+  });
+
+  // Observador para disparar la animación cuando la sección entra o sale de vista
+  const animObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        gsap.to(children, {
+          opacity: 1,
+          y: 0,
+          duration: 0.5,
+          ease: "power3.out",
+          stagger: 0.1
+        });
+      } else {
+        // Reset all children, not just direct children, so animation can replay
+        gsap.set(children, {
+          opacity: 0,
+          y: 60,
+        });
+      }
+    });
+  }, {
+    threshold: 0.3
+  });
+
+  animObserver.observe(section);
+});
+
+
